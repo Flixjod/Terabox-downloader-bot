@@ -77,8 +77,12 @@ bot.on('message', async (msg) => {
 const app = express();
 const PORT = process.env.PORT || 8000;
 
+app.get('/', (req, res) => {
+  res.status(200).send('Bot Is Alive');
+});
+
 app.get('/health', (req, res) => {
-  res.status(200).send('Bot Alive');
+  res.status(200).send('Ok');
 });
 
 app.listen(PORT, () => {
