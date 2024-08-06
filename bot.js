@@ -31,7 +31,7 @@ bot.on('message', async (msg) => {
 
   bot.sendChatAction(chatId, 'typing');
 
-  const url = `https://terabox.udayscriptsx.workers.dev/?url=${message}`;
+  const url = `https://teraboxvideodownloader.nepcoderdevs.workers.dev/?url=${message}`;
 
   try {
     const response = await axios.get(url);
